@@ -1,0 +1,269 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:#dbdfe2;
+	font-family: 'Montserrat';
+}
+#container{
+	width:1200px;
+	height:800px;
+	background:#eff3f7;
+	margin:0 auto;	
+	border-radius:5px;
+	overflow:hidden;
+}
+/* ===== MENU ===== */
+.menu {
+  float: left;
+  height: 100%;
+  min-width: 65px; 
+  background: linear-gradient(#e1e4ea, #e1e4ea);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  margin-top: 70px;
+}
+
+.menu .items {
+  list-style:none;  
+  padding: 0;
+}
+
+.menu .items .item {
+  height: 90px;  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #9fb5ef;
+  font-size: 19pt;
+	
+}
+
+.menu .items .item-active {
+  background-color:#c351bf7a;
+  color: #FFF;
+}
+
+.menu .items .item:hover {
+  cursor: pointer;
+  background-color: #4f6ebd;
+  color: #cfe5ff;
+}
+
+/* ===== Nav Bar ===== */
+.navbar {
+	height: 70px;
+    width: 100%;
+	border-bottom: 2px solid #fffcfc;
+}
+.navbar  li {
+	float: right;
+	margin: 5px 25px 5px;
+}
+.navbar  li img{
+	border-radius:50%;	
+}	
+aside{
+	width:29%;	
+	background-color:#a5a8b57a;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+main{
+	width:65%;	
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+
+aside header{
+	padding:30px 20px;
+}
+aside input{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	padding:0 50px 0 40px;
+	background-color:#eff3f79c;
+	border:none;
+	border-radius:3px;
+	color:#fff;
+	background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+	background-repeat:no-repeat;
+	background-position:1px;
+	background-size:40px;
+}
+aside input::placeholder{
+	color:#fff;
+}
+aside ul{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:690px;
+}
+aside li{
+	padding:10px 0;
+	border-top:2px solid #fffcfc;
+}
+aside li:hover{
+	background-color:#de2e5f;
+}
+h2,h3{
+	margin:0;
+}
+aside li img{
+	border-radius:50%;
+	margin-left:20px;
+	margin-right:8px;
+}
+aside li div{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:12px;
+}
+aside li h2{
+	font-size:14px;
+	color:#fff;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+aside li h3{
+	font-size:12px;
+	color:#7e818a;
+	font-weight:normal;
+}
+
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+.green{
+	background-color:#58b666;
+}
+.orange{
+	background-color:#ff725d;
+}
+.blue{
+	background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+main header {
+	display:flex;
+	
+}
+main header img:first-child{
+	border-radius:50%;
+}
+main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+main header div{
+	margin-left:10px;
+	
+}
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+	padding-top:15px;
+}
+main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:500px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:20px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#58b666;
+}
+#chat .me .message{
+	background-color:#6fbced;
+}
+
+main footer{
+	height:90px;
+	padding:20px 0px 10px 20px;	
+	display:flex;
+	gap:10px;
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:90%;
+	height:70px;
+	border-radius:3px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer img{
+	height:30px;
+	cursor:pointer;
+}
+
+.fa {
+	color:#de2e5f;
+	
+}
+.send {
+  color:#fff;
+  background-color: #4f6ebd;   
+  padding: 12px 12px 12px 12px;
+  border-radius: 50px;
+  font-size: 14pt;
+  height: 40px;
+  align-self: center;	
+}
+.clickable {
+  cursor: pointer;
+}
